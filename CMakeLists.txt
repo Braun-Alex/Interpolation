@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(Interpolation)
+set(CMAKE_CXX_STANDARD 23)
+set(HEADERS resources.h interpolation_method.h newton_interpolation.h spline_interpolation.h)
+set(SOURCES main.cpp interpolation_method.cpp newton_interpolation.cpp spline_interpolation.cpp)
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
